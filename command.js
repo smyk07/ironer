@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 const program = require('commander'); 
+const { version } = require('commander');
 const touch = require('touch') ; 
 const consola = require('consola'); 
 const chalk = require('chalk'); 
-const { version } = require('commander');
+const fs = require('fs'); 
 
 program
      .version('1.0.0')
@@ -16,5 +17,14 @@ program
           touch(filename); 
           consola.success(chalk.greenBright(`Successfully Created File ${filename}`));
      })
+
+program
+     .command('dir <dirname>')
+     .description('Creates a Directory')
+     .action((dirname) => {
+          fs.mkdir(dirname, () => {
+               consola.success(chalk.greenBright(`Successfully Created Directory ${dirname}`)); 
+          }); 
+     }) 
 
 program.parse(process.argv); 

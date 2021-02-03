@@ -1,6 +1,6 @@
 {
   "name": "ironer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The Perfect CLI tool which can make files, directories and much more!",
   "main": "command.js",
   "preferGlobal": true,
@@ -12,9 +12,9 @@
     "Touch",
     "Windows",
     "Node.js",
-    "npm", 
-    "ironer", 
-    "files", 
+    "npm",
+    "ironer",
+    "files",
     "file"
   ],
   "author": "Samyak Bambole",
