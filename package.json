@@ -1,0 +1,25 @@
+{
+  "name": "iron",
+  "version": "1.0.0",
+  "description": "The Perfect CLI tool which can make files, directories and much more!",
+  "main": "command.js",
+  "preferGlobal": true,
+  "bin": "./command.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Touch",
+    "Windows",
+    "Node.js",
+    "npm"
+  ],
+  "author": "Samyak Bambole",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.0.0",
+    "consola": "^2.15.1",
+    "touch": "^3.1.0"
+  }
+}
