@@ -12,7 +12,10 @@
     "Touch",
     "Windows",
     "Node.js",
-    "npm"
+    "npm", 
+    "ironer", 
+    "files", 
+    "file"
   ],
   "author": "Samyak Bambole",
   "license": "MIT",
