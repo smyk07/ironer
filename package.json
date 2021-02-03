@@ -1,5 +1,5 @@
 {
-  "name": "iron",
+  "name": "ironer",
   "version": "1.0.0",
   "description": "The Perfect CLI tool which can make files, directories and much more!",
   "main": "command.js",

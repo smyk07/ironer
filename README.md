@@ -1,4 +1,4 @@
-# iron 
+# ironer 
 
 The Perfect CLI tool which can make files, directories and much more!
 
@@ -7,16 +7,16 @@ The Perfect CLI tool which can make files, directories and much more!
 Install the CLI Globally 
 
 ```
-npm i -g iron
+npm i -g ironer
 ```
 
 ## Usage
 
-Currently, iron can only create files, but in the future versions, it can do much more!
+Currently, ironer can only create files, but in the future versions, it can do much more!
 
 #### Make a file 
 ```
-iron file <filename>
+ironer file <filename>
 ```
 This will create a file named `<filename>`. 
 
