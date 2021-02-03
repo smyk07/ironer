@@ -24,7 +24,13 @@ This will create a file named `<filename>`.
 ```
 ironer dir <dirname>
 ```
-This will create a directory named `<dirname>`,
+This will create a directory named `<dirname>`.
+
+#### Make an empty Express API Template
+```
+ironer express-api <dirname>
+```
+This will Create an empty Express API template in the `<dirname>` directory. 
 
 ## License
 
