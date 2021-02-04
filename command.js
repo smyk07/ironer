@@ -63,6 +63,8 @@ program
                console.log('To Begin Coding,'); 
                console.log(`cd ${dirname}`);
                console.log('npm i'); 
+               console.log('Open the Directory in your code editor'); 
+               console.log('Replace the contents of the \'token\' variable to your Discord Bot\'s Token'); 
                console.log('You are Ready to Start coding!'); 
           })
      })

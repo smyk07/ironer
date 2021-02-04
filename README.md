@@ -32,6 +32,12 @@ ironer express-api <dirname>
 ```
 This will Create an empty Express API template in the `<dirname>` directory. 
 
+#### Make a simple Discord Bot Template
+```
+ironer discord-bot <dirname>
+```
+This will create a simple Discord Bot Template in the `<dirname>` directory. 
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
