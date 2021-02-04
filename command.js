@@ -8,8 +8,8 @@ const fs = require('fs');
 const Git = require('nodegit'); 
 
 program
-     .version('1.0.0')
-     .description('The Touch Command for Windows!')
+     .version('1.0.5')
+     .description('The Perfect CLI tool which can make files, directories and much more!')
 
 program
      .command('file <filename>') 
@@ -30,18 +30,36 @@ program
 
 program 
      .command('express-api <dirname>')
-     .description('Creates a Simple Express-API Template')
+     .description('Creates a Simple Express-API Template in the directory mentioned')
      .action((dirname) => {
           const url = 'https://github.com/samyakbambole/express-api.git'; 
           Git.Clone(url, dirname).then(() => {
-               fs.rmdir(`${dirname}/.git`, () => {
+               fs.rmdir(`./${dirname}/.git`, () => {
                     consola.success(chalk.greenBright('Repository Successfully Cloned!')); 
-                    console.log(''); 
                     console.log(''); 
                }); 
           }).then(() => {
                consola.success(chalk.greenBright('Done!')); 
-               console.log(''); 
+               console.log('To Begin Coding,'); 
+               console.log(`cd ${dirname}`);
+               console.log('npm i'); 
+               console.log('You are Ready to Start coding!'); 
+          })
+     })
+
+program 
+     .command('discord-bot <dirname>') 
+     .description('Creates a Simple Discord Bot Template in the directory mentioned')
+     .action((dirname) => {
+          const url = 'https://github.com/samyakbambole/discord-bot-template.git'; 
+
+          Git.Clone(url, dirname).then(() => {
+               fs.rmdir(`./${dirname}/.git`, () => {
+                    consola.success(chalk.greenBright('Repository Successfully Cloned!')); 
+                    console.log(''); 
+               }); 
+          }).then(() => {
+               consola.success(chalk.greenBright('Done!')); 
                console.log('To Begin Coding,'); 
                console.log(`cd ${dirname}`);
                console.log('npm i'); 
