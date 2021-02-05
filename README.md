@@ -18,25 +18,31 @@ Ironer is a simple CLI which can do basic stuff like Creating Folders / Director
 ```
 ironer file <filename>
 ```
-This will create a file named `<filename>`. 
+This will create a file named `filename`. 
 
 #### Make a Directory
 ```
 ironer dir <dirname>
 ```
-This will create a directory named `<dirname>`.
+This will create a directory named `dirname`.
 
 #### Make an empty Express API Template
 ```
 ironer express-api <dirname>
 ```
-This will Create an empty Express API template in the `<dirname>` directory. 
+This will Create an empty Express API template in the `dirname` directory. 
 
 #### Make a simple Discord Bot Template
 ```
 ironer discord-bot <dirname>
 ```
-This will create a simple Discord Bot Template in the `<dirname>` directory. 
+This will create a simple Discord Bot Template in the `dirname` directory. 
+
+#### Make an empty Vanilla Website Template
+```
+ironer html <dirname>
+```
+This will create an empty Vanilla (HTML, CSS, JS) Website Template in the `dirname` directory. 
 
 ## License
 
