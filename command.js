@@ -8,7 +8,7 @@ const fs = require('fs');
 const Git = require('nodegit'); 
 
 program
-     .version('1.0.5')
+     .version('2.0.0')
      .description('The Perfect CLI tool which can make files, directories and much more!')
 
 program
@@ -65,6 +65,26 @@ program
                console.log('npm i'); 
                console.log('Open the Directory in your code editor'); 
                console.log('Replace the contents of the \'token\' variable to your Discord Bot\'s Token'); 
+               console.log('You are Ready to Start coding!'); 
+          })
+     })
+
+program
+     .command('html <dirname>')
+     .description('Creates a Empty HTML, CSS, JS Template in the directory mentioned')
+     .action((dirname) => {
+          const url = 'https://github.com/samyakbambole/html-template.git'; 
+
+          Git.Clone(url, dirname).then(() => {
+               fs.rmdir(`./${dirname}/.git`, () => {
+                    consola.success(chalk.greenBright('Repository Successfully Cloned!')); 
+                    console.log(''); 
+               }); 
+          }).then(() => {
+               consola.success(chalk.greenBright('Done!')); 
+               console.log('To Begin Coding,'); 
+               console.log('Open the Directory in your code editor'); 
+               console.log('And Start Coding!'); 
                console.log('You are Ready to Start coding!'); 
           })
      })
