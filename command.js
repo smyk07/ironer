@@ -8,7 +8,7 @@ const fs = require('fs');
 const Git = require('nodegit'); 
 
 program
-     .version('2.0.0')
+     .version('2.0.1')
      .description('The Perfect CLI tool which can make files, directories and much more!')
 
 program
@@ -43,6 +43,7 @@ program
                console.log('To Begin Coding,'); 
                console.log(`cd ${dirname}`);
                console.log('npm i'); 
+               console.log('git remote remove origin'); 
                console.log('You are Ready to Start coding!'); 
           })
      })
@@ -63,6 +64,7 @@ program
                console.log('To Begin Coding,'); 
                console.log(`cd ${dirname}`);
                console.log('npm i'); 
+               console.log('git remote remove origin'); 
                console.log('Open the Directory in your code editor'); 
                console.log('Replace the contents of the \'token\' variable to your Discord Bot\'s Token'); 
                console.log('You are Ready to Start coding!'); 
@@ -83,6 +85,7 @@ program
           }).then(() => {
                consola.success(chalk.greenBright('Done!')); 
                console.log('To Begin Coding,'); 
+               console.log('git remote remove origin'); 
                console.log('Open the Directory in your code editor'); 
                console.log('And Start Coding!'); 
                console.log('You are Ready to Start coding!'); 

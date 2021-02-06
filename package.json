@@ -1,6 +1,6 @@
 {
   "name": "ironer",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "The Perfect CLI tool which can make files, directories and much more!",
   "main": "command.js",
   "preferGlobal": true,
