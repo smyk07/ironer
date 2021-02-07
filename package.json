@@ -1,12 +1,14 @@
 {
   "name": "ironer",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "The Perfect CLI tool which can make files, directories and much more!",
   "main": "command.js",
   "preferGlobal": true,
   "bin": "./command.js",
+  "repository": "git://github.com/samyakbambole/ironer.git",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "", 
+    "publish": "npm publish"
   },
   "keywords": [
     "Touch",
@@ -23,6 +25,7 @@
     "chalk": "^4.1.0",
     "commander": "^7.0.0",
     "consola": "^2.15.1",
+    "inquirer": "^7.3.3",
     "nodegit": "^0.27.0",
     "touch": "^3.1.0"
   }

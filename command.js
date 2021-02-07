@@ -8,7 +8,7 @@ const fs = require('fs');
 const Git = require('nodegit'); 
 
 program
-     .version('2.0.1')
+     .version('2.0.2')
      .description('The Perfect CLI tool which can make files, directories and much more!')
 
 program
