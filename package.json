@@ -1,13 +1,13 @@
 {
   "name": "ironer",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "The Perfect CLI tool which can make files, directories and much more!",
   "main": "command.js",
   "preferGlobal": true,
   "bin": "./command.js",
   "repository": "git://github.com/samyakbambole/ironer.git",
   "scripts": {
-    "test": "", 
+    "test": "",
     "publish": "npm publish"
   },
   "keywords": [
